@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ColorService} from "../color.service";
 
 @Component({
   selector: 'app-header',
@@ -6,5 +7,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
+
+    logoColor=" ";
+    constructor(private colorService: ColorService) { }
+
+    ngOnInit() {
+        this.colorService.logoColor$.subscribe(color => {
+            this.logoColor = color;
+        });
+
+    }
 
 }

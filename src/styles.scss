@@ -39,3 +39,58 @@ $cv-theme: mat.define-light-theme((
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+$blue: #3182ed;
+$red: #FF5733;
+
+.color{
+    .nav-link:after{
+        border-bottom: solid 3px black;
+    }
+     path {
+          fill: black;
+      }
+
+}
+
+.color.blue{
+
+    .nav-link{
+
+        &:after{
+            border-bottom: solid 3px $blue;
+        }
+        &:hover {
+            color: $blue;
+        }
+    }
+    .typing, span{
+        color: $blue;
+    }
+
+    path {
+        fill: $blue;
+    }
+}
+
+.color.red{
+    .nav-link{
+
+        &:after{
+            border-bottom: solid 3px $red;
+        }
+        &:hover {
+            color: $red;
+        }
+    }
+    .typing, span{
+        color: $red;
+    }
+
+    path {
+        fill: $red;
+    }
+}
+
+

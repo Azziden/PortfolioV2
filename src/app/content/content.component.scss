@@ -1,30 +1,27 @@
 /* ----------------------- TEXT PRESENTATION ----------------------- */
 .float-container {
     border: 3px solid #fff;
-    padding: 20px;
+    padding: 50px 100px;
     display: flex;
+    justify-content: flex-end;
+    gap: 10%;
+
+
 }
 
 .float-child {
-    width: 50%;
+    align-self: center;
     float: left;
-    margin-left : 15%;
-    margin-top: 8%;
+
 }
-.float-child2 {
-    width: 50%;
-    float: right;
-    margin-right: 15%;
-    margin-top: 8%;
-}
-.flex-left {
+/*.flex-left {
     padding: 40px 10em 10em;
     flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
+}*/
 
 .text-1{
     color: #000000;
@@ -57,8 +54,19 @@
 .logo-spacing{
     margin-right: 5%;
 }
-.typing{
-    color: hsl(214,84%,56%);
-}
+
+
+
+/******************************************************** SECTION 2 ****************************************************/
+
+/*.float-child2 {
+    width: 50%;
+    float: right;
+    margin-right: 15%;
+    margin-top: 8%;
+}*/
+
+/****************************************************** IMAGE **********************************************************/
+
 
 
